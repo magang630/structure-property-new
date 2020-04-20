@@ -25,7 +25,7 @@ from numba import jit
 from sys import argv, exit
 from scipy.spatial import KDTree, ConvexHull
 
-
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def mkdir(path_write):
     # 判断目录是否存在
     # 存在：True
@@ -94,8 +94,8 @@ def compute_simplice_area(vertice1, vertice2, vertice3):
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
+#
+#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @jit(nopython=True)
 def compute_angular_element(neigh_id_input, distance_input, points_input, a_list, b_list, c_list, radius, like_input,
@@ -272,8 +272,8 @@ def compute_symmetry_functions(points, radius):
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
+#
+#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def compute_interstice_distance(voronoi_neighbour_use_input, distance_input, radius_input):
     interstice_distance_in = []
@@ -553,8 +553,8 @@ def compute_interstice_distribution(neighbour, points, radius):
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
+#
+#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def compute_coordination_number_by_cutoff_distance(points_input, radius_input):
     maxdistance = 3.0 * radius_input[0]
